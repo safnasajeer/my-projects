@@ -1,0 +1,90 @@
+body {
+  background: url(https://images.pexels.com/photos/1350/blur-blurred-background.jpg?w=940&h=650&auto=compress&cs=tinysrgb) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.login-body {
+  display: flex;
+}
+
+.form-input {
+  height: 400px;
+  margin-top: 0px;
+
+}
+
+.login-container {
+  position: absolute;
+  text-align: center;
+  height: 400px;
+  width: 500px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 6%;
+  -webkit-border-radius: 6%;
+  -moz-border-radius: 6%;
+  -ms-border-radius: 6%;
+  -o-border-radius: 6%;
+}
+
+.myform {
+  margin: 50px 0 0 75px;
+  padding: auto;
+
+  .form-group .form-control {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+  }
+
+}
+.myform .form-group .btn {
+  margin-right: 0px;
+  margin-top: 20px;
+  height: 40px;
+
+}
+.container {
+  border: 1px solid #ffffff;
+  /* max-width: 400px;
+    height: 340px; */
+  margin-top: 150px;
+}
+
+form {
+  margin: 50px 0 0 75px;
+  padding: auto;
+}
+
+
+
+.form-control {
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff;
+  width: 70%;
+}
+
+.btn {
+  margin-right: 85px;
+  width: 50%;
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff;
+}
+
+#error,
+#erroruser,
+#errorpwd,
+#errorpwdchar {
+  color: red;
+  font-weight: bold;
+}
+
+
+/* //add items style */
