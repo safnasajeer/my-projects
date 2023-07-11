@@ -73,3 +73,31 @@ video.addEventListener("keypress", function (event) {
 
 //this outside any funtction kodthal consolik orintiida window object kittum
 //function nu ullil ane event.target nu = aanu
+
+
+
+
+document.addEventListener('keydown', function(event) {
+    if (event.code === 'ArrowRight') {
+        seekForward();
+    } else if (event.code === 'ArrowLeft') {
+        seekBackward();
+    }
+});
+
+
+function seekForward() {
+    var seekTime = video.currentTime + 1; // Adjust the seek duration as needed
+    if (seekTime > video.duration) {
+        seekTime = video.duration;
+    }
+    video.currentTime = seekTime;
+}
+
+function seekBackward() {
+    var seekTime = video.currentTime - 1; // Adjust the seek duration as needed ,1 secnd
+    if (seekTime < 0) {
+        seekTime = 0;
+    }
+    video.currentTime = seekTime;
+}
